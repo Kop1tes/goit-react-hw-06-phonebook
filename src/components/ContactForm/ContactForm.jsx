@@ -1,3 +1,4 @@
+import { CreateContact } from "features/CreateContact";
 import { Forma } from "./ContactForm.styled";
 
 export const ContactForm = () => {
@@ -7,7 +8,7 @@ export const ContactForm = () => {
 
     return (
         <Forma onSubmit={handleSubmit}>
-           
+           <CreateContact />
         </Forma>
     );
 };

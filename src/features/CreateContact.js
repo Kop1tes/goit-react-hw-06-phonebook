@@ -29,7 +29,7 @@ export const CreateContact = () => {
             number: number,
         };
         
-        dispatch(addContact(''));
+        dispatch(addContact(newContact));
         setNewUserName('');
         setNumber('');
     };
