@@ -1,21 +1,17 @@
-import { ContactsPage } from "features/Contacts";
-import { ToastContainer } from "react-toastify";
-import { ContactForm } from "./ContactForm/ContactForm";
-import { Layout } from "./Layout/Layout";
-import { Section } from "./Section/Section";
+import Filter from './Filter/Filter';
+import ContactList from './ContactList/ContactList';
+import { ContactForm } from './ContactForm/ContactForm';
 
-function App () {
+export const App = () => {
   return (
-    <Layout>
-      <Section title="Phonebook">
+    <>
+      <div>
+        <h1>Phonebook</h1>
         <ContactForm />
-      </Section>
-      <Section title="Contacts">
-        <ContactsPage />
-      </Section>
-      <ToastContainer autoClose={3000} />
-    </Layout>
+        <h2>Contacts</h2>
+        <Filter />
+        <ContactList />
+      </div>
+    </>
   );
 };
-
-export default App;
